@@ -1,9 +1,8 @@
+import { Heading , Button, ButtonGroup, Stack } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import { Heading } from '@chakra-ui/react';
-import { Button, ButtonGroup, Stack } from '@chakra-ui/react';
 
 const Home: NextPage = () => {
   return (
