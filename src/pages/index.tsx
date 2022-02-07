@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { Heading } from '@chakra-ui/react';
+import { Button, ButtonGroup, Stack } from '@chakra-ui/react';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +18,21 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href='https://nextjs.org'>Next.js!</a>
         </h1>
+        <Heading>with Chakra UI</Heading>
+        <Stack pt={8} direction='row' spacing={4} align='center'>
+          <Button colorScheme='teal' variant='solid'>
+            Button
+          </Button>
+          <Button colorScheme='teal' variant='outline'>
+            Button
+          </Button>
+          <Button colorScheme='teal' variant='ghost'>
+            Button
+          </Button>
+          <Button colorScheme='teal' variant='link'>
+            Button
+          </Button>
+        </Stack>
 
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.tsx</code>
